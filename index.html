@@ -1,0 +1,202 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Christmas Celebration | Digital Invitation</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <div class="snow-container" id="snow"></div>
+
+    <!-- ENVELOPE SCREEN -->
+    <section class="envelope-screen" id="envelopeScreen">
+        <div class="envelope-content">
+
+            <p class="small-heading">A SPECIAL INVITATION</p>
+
+            <div class="envelope" id="envelope">
+                <div class="envelope-back"></div>
+
+                <div class="letter-preview">
+                    <span>YOU'RE INVITED</span>
+                    <h2>Christmas<br>Celebration</h2>
+                    <p>2026</p>
+                </div>
+
+                <div class="envelope-front"></div>
+                <div class="envelope-flap"></div>
+                <div class="wax-seal">✦</div>
+            </div>
+
+            <h1>You're Invited!</h1>
+
+            <p class="envelope-description">
+                A special celebration awaits you.<br>
+                Open your invitation to discover more.
+            </p>
+
+            <button class="open-button" id="openButton">
+                OPEN INVITATION <span>→</span>
+            </button>
+
+            <p class="bottom-note">WITH LOVE & CHRISTMAS MAGIC</p>
+        </div>
+    </section>
+
+    <!-- MAIN INVITATION -->
+    <main class="invitation" id="invitation">
+        <div class="invitation-card">
+
+            <div class="top-decoration">✦ ❄ ✦ ❄ ✦</div>
+
+            <p class="company-name">JEANY WEB STUDIOS PRESENTS</p>
+
+            <div class="christmas-icon">🎄</div>
+
+            <p class="welcome-text">THE SEASON OF JOY IS HERE</p>
+
+            <h1 class="main-title">
+                You're Invited to<br>
+                <span>Our Christmas Party</span>
+            </h1>
+
+            <div class="gold-line"></div>
+
+            <p class="invitation-message">
+                It's time to celebrate the year's achievements,
+                share beautiful memories and enjoy an unforgettable
+                evening together.
+                <br><br>
+                Join us as we celebrate the festive season
+                with great company, laughter and Christmas magic.
+            </p>
+
+            <!-- EVENT DETAILS -->
+            <section class="event-details">
+
+                <div class="detail-item">
+                    <span class="detail-icon">📅</span>
+                    <div>
+                        <h3>DATE</h3>
+                        <p>Friday, 18 December 2026</p>
+                    </div>
+                </div>
+
+                <div class="detail-item">
+                    <span class="detail-icon">🕕</span>
+                    <div>
+                        <h3>TIME</h3>
+                        <p>18:00 – Late</p>
+                    </div>
+                </div>
+
+                <div class="detail-item">
+                    <span class="detail-icon">📍</span>
+                    <div>
+                        <h3>VENUE</h3>
+                        <p>The Grand Christmas Venue</p>
+                        <p class="sub-detail">Sandton, Johannesburg</p>
+                    </div>
+                </div>
+
+                <div class="detail-item">
+                    <span class="detail-icon">👗</span>
+                    <div>
+                        <h3>DRESS CODE</h3>
+                        <p>Festive Elegance</p>
+                        <p class="sub-detail">Red, Green, Gold & Black</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <div class="gold-line"></div>
+
+            <p class="closing-message">
+                Let's make this Christmas one to remember!
+            </p>
+
+            <!-- ACTION BUTTONS -->
+            <div class="action-buttons">
+
+                <button class="rsvp-button" id="rsvpButton">
+                    CONFIRM ATTENDANCE
+                </button>
+
+                <a href="https://www.google.com/maps/search/?api=1&query=Sandton+Johannesburg"
+                   target="_blank"
+                   rel="noopener noreferrer"
+                   class="map-button">
+                    VIEW LOCATION
+                </a>
+
+            </div>
+
+            <p class="rsvp-deadline">
+                KINDLY RSVP BY 10 DECEMBER 2026
+            </p>
+
+            <div class="bottom-decoration">❄ ✦ ❄</div>
+
+            <footer>
+                <p>Designed with ♥ by</p>
+                <h3>JEANY WEB STUDIOS</h3>
+                <span>Creating beautiful digital experiences.</span>
+            </footer>
+
+        </div>
+    </main>
+
+    <!-- RSVP POPUP -->
+    <div class="modal" id="rsvpModal">
+        <div class="modal-content">
+
+            <button class="close-modal" id="closeModal">×</button>
+
+            <div class="modal-icon">🎁</div>
+
+            <h2>You're on the guest list?</h2>
+            <p>Please confirm your attendance below.</p>
+
+            <form id="rsvpForm">
+
+                <label for="guestName">Your full name</label>
+                <input type="text" id="guestName"
+                       placeholder="Enter your name" required>
+
+                <label for="guestEmail">Email address</label>
+                <input type="email" id="guestEmail"
+                       placeholder="Enter your email" required>
+
+                <label for="attendance">Will you be attending?</label>
+                <select id="attendance" required>
+                    <option value="">Select an option</option>
+                    <option value="Yes">Yes, I'll be there!</option>
+                    <option value="No">Sorry, I can't attend.</option>
+                </select>
+
+                <button type="submit" class="submit-button">
+                    SUBMIT RSVP
+                </button>
+
+            </form>
+
+            <div id="successMessage" class="success-message">
+                Thank you! Your response has been recorded.
+            </div>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
